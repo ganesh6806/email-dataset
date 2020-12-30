@@ -1,0 +1,34 @@
+html
+    head
+        title Email search
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker.min.css')
+        link(rel='stylesheet', href='/style.css')
+    body
+        .container
+            h3 Enron email search
+
+            .search-row
+                span.search Search
+                input.form-control.input-text(type='text', placeholder='whatever', js-text)
+                label.raw-label
+                    input(type="checkbox", js-search-in-raw)
+                    | Search in raw content (forwarded, etc)
+
+            .search-row
+                span.between Between
+                input.form-control.input-name(type='text', placeholder='anybody', js-name-1)
+                span.and and
+                input.form-control.input-name(type='text', placeholder='anybody', js-name-2)
+
+            .search-row
+                span.between From
+                input.form-control.input-date(type='text', placeholder='anytime', js-datepicker-1)
+                span.and to
+                input.form-control.input-date(type='text', placeholder='anytime', js-datepicker-2)
+
+            ul.list
+        script(src='//code.jquery.com/jquery-1.11.3.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js')
+        script(src='/app.js')

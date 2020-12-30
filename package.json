@@ -1,0 +1,23 @@
+{
+  "name": "enron-email-search",
+  "version": "0.0.1",
+  "description": "Parse Enron's email dumps and provide a simple search interface.",
+  "main": "server.js",
+  "author": "Patrik Gallik",
+  "license": "whatever",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "camel-case": "^1.1.2",
+    "cors": "^2.8.5",
+    "elasticsearch": "^16.7.2",
+    "express": "^4.13.3",
+    "fs-extra": "^7.0.1",
+    "glob": "^5.0.15",
+    "jade": "^1.11.0",
+    "moment": "^2.10.6",
+    "request": "^2.65.0"
+  }
+}
